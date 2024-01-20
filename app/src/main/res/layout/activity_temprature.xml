@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btnreturn"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:onClick="btnReturnClick"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/dp_20"
+            android:text="體溫近期數據"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/nametag">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+            android:padding="@dimen/dp_10"
+            android:rowCount="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="最新"
+                    android:textColor="#A3C0E4"
+                    android:textSize="@dimen/dp_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/new_tem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="無數值"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="最高"
+                    android:textColor="#A3C0E4"
+                    android:textSize="@dimen/dp_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/highest_tem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="無數值"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="最低"
+                    android:textColor="#A3C0E4"
+                    android:textSize="@dimen/dp_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lowest_tem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="無數值"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+
+                android:layout_column="3"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+
+                    android:text="單位"
+                    android:textColor="#A3C0E4"
+                    android:textSize="@dimen/dp_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:text="°C"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_17"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/temchart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+
+    <LinearLayout
+        android:background="@drawable/bgdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#272727"
+            android:id="@+id/cardview0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/layout0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/nametag"
+                android:animateLayoutChanges="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="平均"
+                    android:textColor="#ffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/avgtem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:text="無"
+                    android:textColor="#ffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="°C"
+                    android:textColor="#ffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <CalendarView
+            android:id="@+id/calendarView_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:theme="@style/CalenderViewCustom"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

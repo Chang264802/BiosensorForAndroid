@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/btnreturn"
+                            android:layout_width="71dp"
+                            android:layout_height="match_parent"
+                            android:background="#00FFFFFF"
+                            android:onClick="btnReturnClick"
+                            app:srcCompat="?attr/homeAsUpIndicator" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="步數近期數據"
+                            android:textSize="@dimen/dp_20"
+                            android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_30"
+                    android:background="@drawable/nametag">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:columnCount="3"
+                            android:padding="@dimen/dp_10"
+                            android:rowCount="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="vertical"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:text="平均"
+                                            android:textColor="#A3C0E4"
+                                            android:textSize="@dimen/dp_22"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/agvstep"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentRight="true"
+                                            android:gravity="center"
+                                            android:text="無數值"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/dp_17"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_row="0"-->
+<!--                                    android:layout_column="1"-->
+<!--                                    android:layout_gravity="center_horizontal"-->
+<!--                                    android:orientation="vertical"-->
+<!--                                    android:layout_rowWeight="1"-->
+<!--                                    android:layout_columnWeight="1">-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_alignParentLeft="true"-->
+<!--                                        android:text="最高"-->
+<!--                                        android:textColor="#A3C0E4"-->
+<!--                                        android:textSize="@dimen/dp_22"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                        <TextView-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="match_parent"-->
+<!--                                            android:layout_alignParentRight="true"-->
+<!--                                            android:gravity="center"-->
+<!--                                            android:text="無數值"-->
+<!--                                            android:textColor="@color/white"-->
+<!--                                            android:textSize="@dimen/dp_17"-->
+<!--                                            android:textStyle="bold" />-->
+<!--                                </LinearLayout>-->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_row="0"
+                                    android:layout_column="1"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="vertical"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_row="0"
+
+                                    android:layout_column="1"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+
+                                            android:text="單位"
+                                            android:textColor="#A3C0E4"
+                                            android:textSize="@dimen/dp_22"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_gravity="center"
+                                            android:text="步"
+
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/dp_17"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </GridLayout>
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/walkchart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                </com.github.mikephil.charting.charts.BarChart>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#272727"
+            android:id="@+id/cardview0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/layout0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/nametag"
+                android:animateLayoutChanges="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="最新"
+                    android:textColor="#ffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/new_walk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:text="無"
+                    android:textColor="#ffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="步"
+                    android:textColor="#ffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <CalendarView
+                    android:id="@+id/calendarview_walk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dateTextAppearance="@style/CalenderViewDateCustomText"
+                    android:theme="@style/CalenderViewCustom"
+                    android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="191dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@mipmap/walkimg_background_image1" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="391dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:fontFamily="sans-serif-black"
+                    android:text=" 1、跑步是最方便的有氧運動：有氧運動能將體內的葡萄糧充分燃燒，轉化為新的能量消耗掉，堅持跑步配合飲食控制，不僅能減肥成功，而且不易反彈。\n\n
+
+2、跑步不需要花費一分錢：多麼經濟的運動，只在一個場地，便可健康減肥。\n\n
+
+3、跑步彈性很大，任何時間都能開始：早晨、下午、夜間，隨時隨地，想跑就跑。\n\n
+
+4、跑步降脂又減壓：跑步可以注意力、清理頭腦，邊減肥邊使大腦得到釋放，整個人都會感到舒暢。\n"
+                    android:textColor="@color/dark_blue"></TextView>
+
+                <TextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_35"
+                    android:fontFamily="sans-serif-black"
+                    android:text="跑步前的準備:\n在跑步前做適當的準備運動 ，讓身體在運動前進入狀態，不容易發生關節、肌腱的扭傷。 準備運動沒有硬性規定必須做些什麼，通常都是拉伸肌肉，壓壓腿、扭扭腰，手腳各關節也要活動一下，需要注意的是動作儘量做到位，時間在十分鐘左右，隨便動兩下就達不到熱身的效果喽。"
+                    android:textColor="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/imageview4"
+                    android:layout_width="464dp"
+                    android:layout_height="470dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/atl_m_20190325161258_152" />
+                <!--</ScrollView>-->
+
+
+        </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+
+

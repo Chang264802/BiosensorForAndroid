@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFF8"
+    >
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/gif"
+            android:layout_width="wrap_content"
+            android:layout_height="290dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/loading"></pl.droidsonroids.gif.GifImageButton>
+
+<!--        <TextView-->
+<!--            android:id="@+id/counting"-->
+<!--            android:visibility="invisible"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginLeft="174dp"-->
+<!--            android:layout_marginTop="@dimen/dp_105"-->
+<!--            android:text="60"-->
+<!--            android:textColor="@color/dark_blue"-->
+<!--            android:textSize="@dimen/dp_40"-->
+<!--            android:textStyle="bold" />-->
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btntest"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="btnOnClick"
+            android:text="開始偵測" />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

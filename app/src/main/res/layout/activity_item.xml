@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/txvdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:text="紀錄日期"
+            android:textColor="#07a"
+            android:textSize="26sp" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txvtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="類別"
+            android:textColor="#06A123" />
+
+        <TextView
+            android:id="@+id/txvdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="數值"
+            android:textColor="#EB5B2E" />
+
+        <TextView
+            android:id="@+id/txvtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="紀錄時間"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+</LinearLayout>

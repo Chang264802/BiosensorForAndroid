@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="powei.com.example.b20">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.B20">
+        <activity android:name=".weather"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".changepassword"
+            android:launchMode="singleTask"/>
+        <activity android:name=".showuserdata"
+            android:launchMode="singleTask"/>
+        <activity android:name=".updateuserdata"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activitychangedata"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activitylist"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/my_shared_folder" />
+        </provider>
+
+        <activity android:name=".walk_history"
+            android:launchMode="singleTask"/>
+        <activity android:name=".blood_history"
+            android:launchMode="singleTask"/>
+        <activity android:name=".heart_rate_history"
+            android:launchMode="singleTask"/>
+        <activity android:name=".heartrate_and_blood_test"
+            android:launchMode="singleTask"/>
+        <activity android:name=".Air"
+            android:launchMode="singleTask"/>
+        <activity android:name=".Blood"
+            android:launchMode="singleTask"/>
+        <activity android:name=".Heartrate"
+            android:launchMode="singleTask"/>
+        <activity android:name=".tempraturedata"
+            android:launchMode="singleTask"/>
+        <activity android:name=".MainActivity0"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".enter"
+            android:exported="true"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Walkdata"
+            android:label="Bar Chart" />
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask"/>
+
+        <receiver android:name=".AlarmReceiver"
+                  android:enabled="true"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="play_hskay"></action>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".BluetoothService"
+                 android:enabled="true"
+                 android:exported="true" />
+    </application>
+
+</manifest>

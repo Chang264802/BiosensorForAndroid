@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:elevation="@dimen/dp_10"
+        android:background="@drawable/nametag">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生理數據"
+                android:textSize="28sp"
+                android:layout_marginTop="50dp"
+                android:textColor="#A3C0E4"
+                android:textStyle="bold"
+                android:elevation="@dimen/dp_16"
+                android:id="@+id/hi"
+                android:layout_margin="12dp"/>
+            <ImageButton
+                android:id="@+id/openblueteeth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/btbg"
+                android:onClick="btnOnClick"
+                android:scaleType="centerInside"
+                android:elevation="@dimen/dp_16"
+                android:src="@drawable/ic_baseline_bluetooth_24"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnshare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:onClick="btnOnClick"
+                android:elevation="@dimen/dp_16"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_baseline_share_24"></ImageButton>
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="Mail"
+            android:textColor="@color/black"
+            android:textSize="0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/_2023_03_20_201353"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_80"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical"
+        android:background="@drawable/bgdata">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/time_now"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="#A3C0E4"
+
+                android:textSize="@dimen/dp_0" />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnwalk"
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="2"
+                android:layout_gravity="fill_horizontal"
+                android:elevation="@dimen/dp_8"
+                android:onClick="btnOnClick"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="@dimen/dp_16"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/nametag"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_10">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+
+                                android:src="@drawable/ic_footprint_fill0_wght400_grad0_opsz48"></ImageView>
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:text="步數"
+                                android:textColor="#768CA9"
+                                android:textSize="24dp"
+/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/walkdata_now"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dp_25"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnheart"
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:onClick="btnOnClick"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="@dimen/dp_16">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/nametag">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                             <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/heartratetest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_ecg_heart_fill0_wght400_grad0_opsz48"></ImageView>
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:text="心率"
+                                android:textColor="#768CA9"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/imbtnheart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:background="@android:color/transparent"
+                                app:srcCompat="@drawable/ic_baseline_info_24" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/heartdata_now"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dp_25"
+                                android:textStyle="bold" />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnblood"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="0.8"
+                android:layout_gravity="fill_horizontal"
+                android:onClick="btnOnClick"
+                app:cardBackgroundColor="#536DFE"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="@dimen/dp_16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nametag"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_10">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/bloodtest"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentRight="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_spo2_fill0_wght400_grad0_opsz48"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="血氧"
+                                    android:textColor="#768CA9"
+                                    android:textSize="25dp"
+/>
+                            </LinearLayout>
+
+
+
+                            <ImageButton
+                                android:id="@+id/imblood"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:background="@android:color/transparent"
+                                app:srcCompat="@drawable/ic_baseline_info_24" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/blooddata_now"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dp_25"
+                                android:textStyle="bold"  />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btntem"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:onClick="btnOnClick"
+                app:cardBackgroundColor="#27017C"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nametag"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginEnd="@dimen/dp_10">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/temtest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignParentTop="true"
+
+                                android:layout_alignParentRight="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_thermostat_fill0_wght400_grad0_opsz48"></ImageView>
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="體溫"
+                                android:textColor="#768CA9"
+                                android:textSize="25dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/temdata_now"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dp_25"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECE7CA"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7天"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30天"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6個月"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1年"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="最新"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/dp_27"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_140"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="ppm"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/dp_27"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/temchart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+
+
+
+
+
+</LinearLayout>

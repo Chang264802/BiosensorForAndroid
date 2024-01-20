@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="個人資料修改"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:rowCount="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="帳號："
+                android:textSize="@dimen/dp_25" />
+
+            <TextView
+                android:id="@+id/txtaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="@dimen/dp_25"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="電子信箱："
+                android:textSize="@dimen/dp_20" />
+
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12311112@gmail.com"
+                android:textSize="@dimen/dp_20"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="電話："
+                android:textSize="@dimen/dp_20" />
+
+            <EditText
+                android:id="@+id/etxtphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="請輸入電話"
+                android:textSize="@dimen/dp_20"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字/暱稱："
+                android:textSize="@dimen/dp_20" />
+
+            <EditText
+                android:id="@+id/etxtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="請輸入名字/暱稱"
+                android:textSize="@dimen/dp_20"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生日："
+                android:textSize="@dimen/dp_20" />
+
+            <EditText
+                android:id="@+id/etxtbirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:ems="10"
+                android:hint="請輸入生日"
+                android:textSize="@dimen/dp_20"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:layout_marginLeft="10dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dpbtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:id="@+id/datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true">
+
+            </DatePicker>
+
+            <Button
+                android:id="@+id/btncheckbirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="確定"
+                android:textSize="@dimen/dp_20" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高："
+                android:textSize="@dimen/dp_20" />
+
+            <EditText
+                android:id="@+id/etxtheigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="請輸入身高"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/dp_20"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="體重："
+                android:textSize="@dimen/dp_20" />
+
+            <EditText
+                android:id="@+id/etxtweigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="請輸入體重"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/dp_20"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帳號創建日期："
+                android:textSize="@dimen/dp_20" />
+
+            <TextView
+                android:id="@+id/txtcreatedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2020/1/1"
+                android:textSize="@dimen/dp_20"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnupdateuserdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="更新"
+                android:textSize="@dimen/dp_20"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

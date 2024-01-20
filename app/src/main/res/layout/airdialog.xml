@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/airtext2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text=" 空氣品質怎麼看?"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/airtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:text="0.01ppm=1ppb"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:text="所有室內有機氣態物質稱為TVOC，主要來源有油漆、塗料、膠粘劑、建築、裝飾材料、膠合劑、板材、壁紙、家具、家用電器、清潔劑、人體本身的排放、燃煤、天然氣等燃燒產物、吸菸、採暖、烹調等的煙霧、燃料燃燒、交通運輸等等"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:src="@mipmap/voc"></ImageView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:text="確定"
+        android:textColor="#3F51B5"
+        android:textSize="25sp" />
+</LinearLayout>

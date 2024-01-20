@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/nametag">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="12dp"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/hi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="歡迎進入掌握健康"
+                android:textColor="#A3C0E4"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imbtnweather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_30"
+                android:elevation="@dimen/dp_17"
+                android:background="#00FFFFFF"
+                android:onClick="OnClick"
+                app:srcCompat="@drawable/ic_nest_farsight_weather_fill0_wght400_grad0_opsz48" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hi"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="-9dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="名字"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="Mail"
+            android:textColor="@color/black"
+            android:textSize="0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/_2023_03_20_201353"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_80"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bgdata">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_10"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/healthdata"
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/teal_700"
+                android:layout_gravity="fill_horizontal"
+                android:onClick="OnClick"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/dp_16"
+                tools:ignore="OnClick">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_hiking_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="健康資料檢視"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+
+                android:layout_row="0"
+                android:layout_rowWeight="0.5"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:columnCount="1"
+                android:orientation="vertical"
+                android:rowCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/watch"
+
+                    android:layout_width="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="0.5"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="OnClick"
+                    app:cardBackgroundColor="#9286DC"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="@dimen/dp_16"
+                    tools:ignore="OnClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_bluetooth_audio_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="藍牙設備連接"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/watch2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="OnClick"
+                    app:cardCornerRadius="8dp"
+                    tools:ignore="OnClick"
+                    app:cardElevation="@dimen/dp_16"
+                    app:cardBackgroundColor="@color/dark_blue">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_watch_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="生理數據"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ProfileSetting"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="3"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:onClick="OnClick"
+                app:cardCornerRadius="8dp"
+                tools:ignore="OnClick"
+                app:cardBackgroundColor="#536DFE"
+                app:cardElevation="@dimen/dp_16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_settings_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="個人資料"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logOut"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:onClick="OnClick"
+                app:cardCornerRadius="8dp"
+                tools:ignore="OnClick"
+                app:cardElevation="@dimen/dp_16"
+                app:cardBackgroundColor="#27017C">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_exit_to_app_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="登出"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/dp_50"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/_2023_03_20_201353"
+            android:elevation="@dimen/dp_16"
+/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bglogin">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="@dimen/dp_16"
+            android:background="@drawable/loginsert"
+
+
+            android:drawablePadding="20dp"
+            android:hint="使用者帳號"
+            android:padding="15dp"
+            android:textColor="@color/black"
+ />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginEnd="20dp"
+            android:elevation="@dimen/dp_16"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/loginsert"
+
+            android:drawablePadding="20dp"
+            android:hint="密碼"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:elevation="@dimen/dp_16"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btnlogin"
+            android:text="登入"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginbtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="還沒有帳號?點此進行註冊"
+            android:textColor="@color/cardview_dark_background" />
+
+        <TextView
+            android:id="@+id/tonologapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginbtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="@dimen/dp_50"
+            android:shadowColor="@color/black"
+            android:text="進入不登入監測"
+            android:textColor="@color/cardview_dark_background" />
+
+        <TextView
+            android:id="@+id/others"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_above="@id/socialicons"
+            android:layout_centerHorizontal="true"
+            android:text="其他登入方式" />
+
+        <LinearLayout
+            android:id="@+id/socialicons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/google_login_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                app:srcCompat="@drawable/googleg_standard_color_18" />
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/facebook_login_btn"-->
+            <!--            android:layout_width="48dp"-->
+            <!--            android:layout_height="48dp"-->
+            <!--            android:layout_margin="20dp"-->
+            <!--            app:srcCompat="@drawable/fb" />-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/nametag"
+                android:elevation="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/hi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_marginTop="50dp"
+                        android:text="個人資料"
+                        android:textColor="#A3C0E4"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/etxtname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="未輸入"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_20"
+
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:background="@drawable/nametag"
+                    android:elevation="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:text="帳號："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_22"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtaccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="未輸入"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_20" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bgdata">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/nametag"
+                android:elevation="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:text="電子信箱："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="未輸入"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/nametag"
+                android:elevation="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView321"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:text="電話："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/etxtphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="未輸入"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/nametag"
+                android:elevation="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:text="生日："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/etxtbirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="未輸入"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20" />
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:columnCount="2"
+                android:rowCount="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:background="@drawable/nametag"
+                    android:elevation="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:text="身高："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_22"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/etxtheigh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:text="未輸入"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_20" />
+
+                        <TextView
+                            android:id="@+id/etxtheighcm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+
+                            android:inputType="textPersonName"
+                            android:text="CM"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_20" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:background="@drawable/nametag"
+                    android:elevation="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:text="體重："
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_22"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/etxtweigh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:text="未輸入"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_20" />
+
+                        <TextView
+                            android:id="@+id/etxtweighkg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:inputType="textPersonName"
+                            android:text="KG"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_20" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnupdateuserdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btncolor"
+                    android:text="更新個人資料"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnupdatepassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btncolor"
+                    android:text="更新密碼"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:elevation="@dimen/dp_10"
+
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/nametag"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text="帳號創建日期："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtcreatedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:text="未輸入"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20"  />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
